@@ -578,7 +578,7 @@ int main(int argc, char **argv)
                 log_set_level(__LEVEL_DEBUG__);
             }else if(strcmp(argv[i], "-h") == 0)
             {
-                printf("%s [-rch]\n", argv[0]);
+                printf("%s [-rchd]\n", argv[0]);
                 printf("-c command mode\n");
                 printf("-r reset card\n");
                 printf("-d show debug log\n");
