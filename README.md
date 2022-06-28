@@ -80,7 +80,7 @@ dtc -I dts -O dtb -o sun50i-h6-orangepi-3-lts.dtb sun50i-h6-orangepi-3-lts.dts
 注意：由于我的sim模块没有detect管脚，所以板子出来detect管脚直接连接到GND上
 
 
-![pins](图片链接 "pins")
+![pins](https://github.com/ash255/SIM/blob/main/pins.png)
 
 ## preview
-![preview](图片链接 "preview")
+![preview](https://github.com/ash255/SIM/blob/main/preview.jpg)
