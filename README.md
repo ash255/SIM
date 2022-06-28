@@ -1,10 +1,10 @@
 # SIM
 sim application for orangepi 3 lts
 
-## purpose
+## Purpose
 与SIM卡的一些小交互
 
-## support
+## Support
 orangepi 3 lts linux 4.9
 
 ## Usage
@@ -19,7 +19,7 @@ usage: ./sim [-rdch]
 ## Note
 linux4.9版本中带有scr.ko，该驱动为智能卡驱动，相关代码在内核源码的字符驱动目录下。而5.10没有智能卡驱动。
 
-## driver
+## Driver
 1. 修改sun50i-h6-orangepi-3-lts.dts设备树中的smartcard节点为以下状态，该文件可以在官方提供的linux内核中找到
 ```
 smartcard@0x05005400 {
@@ -76,11 +76,11 @@ dtc -I dts -O dtb -o sun50i-h6-orangepi-3-lts.dtb sun50i-h6-orangepi-3-lts.dts
 
 6. 如果成功可以用lsmod命令看到scr驱动已经加载，并且在/dev下存在smartcard设备节点；如果失败可以使用dmesg查看失败原因，dmesg | grep scr
 
-## pins
+## Pins
 注意：由于我的sim模块没有detect管脚，所以板子出来detect管脚直接连接到GND上
 
 
 ![pins](https://github.com/ash255/SIM/blob/main/pins.png)
 
-## preview
+## Preview
 ![preview](https://github.com/ash255/SIM/blob/main/preview.jpg)
