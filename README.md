@@ -5,7 +5,7 @@ sim application for orangepi 3 lts
 与SIM卡的一些小交互
 
 ## Support
-orangepi 3 lts linux 4.9
+orangepi 3 lts debian linux 4.9
 
 ## Usage
 ```
